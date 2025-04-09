@@ -13,13 +13,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BLUE FRAGMENT STARTER!"
+        android:text="BLUE FRAGMENT STARTER"
+        android:textSize="15sp"
         android:layout_margin="20dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/startFragment"
         android:layout_width="wrap_content"
@@ -27,13 +29,11 @@
         android:text="START FRAGMENT"
         android:layout_margin="20dp"
         android:layout_gravity="center_horizontal"
-        />
+        android:onClick="startFragment" />
+
     <androidx.fragment.app.FragmentContainerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/fragment_container"
-        >
-
-    </androidx.fragment.app.FragmentContainerView>
-
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 </LinearLayout>
